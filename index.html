@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyLine Airlines - Reservation System</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-plane"></i>
+                <h1>SkyLine Airlines</h1>
+            </div>
+            <nav class="nav">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#bookings" class="nav-link">My Bookings</a>
+                <a href="#about" class="nav-link">About</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="container">
+                <div class="hero">
+                    <h2>Find Your Perfect Flight</h2>
+                    <p>Book flights to destinations worldwide with ease</p>
+                </div>
+
+                <!-- Flight Search Form -->
+                <div class="search-form">
+                    <div class="trip-type">
+                        <label>
+                            <input type="radio" name="tripType" value="roundtrip" checked>
+                            <span>Round Trip</span>
+                        </label>
+                        <label>
+                            <input type="radio" name="tripType" value="oneway">
+                            <span>One Way</span>
+                        </label>
+                    </div>
+
+                    <form id="flightSearchForm" class="search-inputs">
+                        <div class="input-group">
+                            <label for="from">From</label>
+                            <select id="from" required>
+                                <option value="">Select departure city</option>
+                                <option value="NYC">New York (NYC)</option>
+                                <option value="LAX">Los Angeles (LAX)</option>
+                                <option value="CHI">Chicago (CHI)</option>
+                                <option value="MIA">Miami (MIA)</option>
+                                <option value="LAS">Las Vegas (LAS)</option>
+                                <option value="SEA">Seattle (SEA)</option>
+                                <option value="BOS">Boston (BOS)</option>
+                                <option value="DEN">Denver (DEN)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="to">To</label>
+                            <select id="to" required>
+                                <option value="">Select destination city</option>
+                                <option value="NYC">New York (NYC)</option>
+                                <option value="LAX">Los Angeles (LAX)</option>
+                                <option value="CHI">Chicago (CHI)</option>
+                                <option value="MIA">Miami (MIA)</option>
+                                <option value="LAS">Las Vegas (LAS)</option>
+                                <option value="SEA">Seattle (SEA)</option>
+                                <option value="BOS">Boston (BOS)</option>
+                                <option value="DEN">Denver (DEN)</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="departDate">Departure Date</label>
+                            <input type="date" id="departDate" required>
+                        </div>
+
+                        <div class="input-group" id="returnDateGroup">
+                            <label for="returnDate">Return Date</label>
+                            <input type="date" id="returnDate">
+                        </div>
+
+                        <div class="input-group">
+                            <label for="passengers">Passengers</label>
+                            <select id="passengers" required>
+                                <option value="1">1 Passenger</option>
+                                <option value="2">2 Passengers</option>
+                                <option value="3">3 Passengers</option>
+                                <option value="4">4 Passengers</option>
+                                <option value="5">5 Passengers</option>
+                                <option value="6">6 Passengers</option>
+                            </select>
+                        </div>
+
+                        <div class="input-group">
+                            <label for="class">Class</label>
+                            <select id="class" required>
+                                <option value="economy">Economy</option>
+                                <option value="business">Business</option>
+                                <option value="first">First Class</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="search-btn">
+                            <i class="fas fa-search"></i>
+                            Search Flights
+                        </button>
+                    </form>
+                </div>
+
+                <!-- Flight Results -->
+                <div id="flightResults" class="flight-results hidden">
+                    <h3>Available Flights</h3>
+                    <div id="flightsList" class="flights-list"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Booking Section -->
+        <section id="booking" class="section">
+            <div class="container">
+                <div class="booking-progress">
+                    <div class="progress-step active">
+                        <span class="step-number">1</span>
+                        <span class="step-title">Flight Selection</span>
+                    </div>
+                    <div class="progress-step">
+                        <span class="step-number">2</span>
+                        <span class="step-title">Passenger Details</span>
+                    </div>
+                    <div class="progress-step">
+                        <span class="step-number">3</span>
+                        <span class="step-title">Seat Selection</span>
+                    </div>
+                    <div class="progress-step">
+                        <span class="step-number">4</span>
+                        <span class="step-title">Payment</span>
+                    </div>
+                    <div class="progress-step">
+                        <span class="step-number">5</span>
+                        <span class="step-title">Confirmation</span>
+                    </div>
+                </div>
+
+                <div id="bookingContent" class="booking-content">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- My Bookings Section -->
+        <section id="bookings" class="section">
+            <div class="container">
+                <h2>My Bookings</h2>
+                <div id="bookingsList" class="bookings-list">
+                    <div class="no-bookings">
+                        <i class="fas fa-plane-slash"></i>
+                        <p>No bookings found</p>
+                        <p>Start by searching for flights on the home page</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About SkyLine Airlines</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>SkyLine Airlines has been connecting people and places for over 25 years. We pride ourselves on providing exceptional service, comfortable flights, and competitive prices.</p>
+                        <div class="features">
+                            <div class="feature">
+                                <i class="fas fa-shield-alt"></i>
+                                <h4>Safe & Secure</h4>
+                                <p>Your safety is our top priority with industry-leading safety standards</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-clock"></i>
+                                <h4>On-Time Performance</h4>
+                                <p>98% on-time performance rate with reliable scheduling</p>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-heart"></i>
+                                <h4>Customer Service</h4>
+                                <p>24/7 customer support to assist you with any needs</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Modal for Seat Selection -->
+    <div id="seatModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Select Your Seats</h3>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="seat-map">
+                    <div class="aircraft">
+                        <div class="seat-legend">
+                            <div class="legend-item">
+                                <div class="seat available"></div>
+                                <span>Available</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="seat occupied"></div>
+                                <span>Occupied</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="seat selected"></div>
+                                <span>Selected</span>
+                            </div>
+                        </div>
+                        <div id="seatGrid" class="seat-grid"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="confirmSeats" class="btn btn-primary">Confirm Seats</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Spinner -->
+    <div id="loadingSpinner" class="loading-spinner hidden">
+        <div class="spinner"></div>
+        <p>Searching for flights...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
