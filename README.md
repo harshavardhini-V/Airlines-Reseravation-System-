@@ -1,10 +1,10 @@
-# ✈️ SkyLine Airlines - Reservation System
+ SkyLine Airlines - Reservation System
 
 A modern, responsive airline reservation system built with HTML, CSS, and JavaScript. This project demonstrates a complete flight booking workflow with an intuitive user interface and comprehensive functionality.
 
-## 🌟 Features
+ Features
 
-### Core Functionality
+ Core Functionality
 - **Flight Search**: Search flights between 8 major cities with flexible date options
 - **Trip Types**: Support for both round-trip and one-way flights
 - **Multiple Classes**: Economy, Business, and First Class options
@@ -13,24 +13,24 @@ A modern, responsive airline reservation system built with HTML, CSS, and JavaSc
 - **Payment Processing**: Simulated payment system with form validation
 - **Booking Management**: View and manage all bookings with persistent storage
 
-### User Experience
+ User Experience
 - **Responsive Design**: Works seamlessly on desktop, tablet, and mobile devices
 - **Modern UI**: Clean, professional interface with smooth animations
 - **Form Validation**: Comprehensive client-side validation with user-friendly error messages
 - **Loading States**: Visual feedback during search and booking processes
 - **Progress Tracking**: 5-step booking progress indicator
 
-### Technical Features
+Technical Features
 - **Local Storage**: Persistent booking data across browser sessions
 - **Dynamic Content**: Real-time flight generation with realistic pricing
 - **Modal Dialogs**: Interactive seat selection and confirmation dialogs
 - **Navigation**: Single-page application with smooth section transitions
 
-## 🚀 Live Demo
+ Live Demo
 
 **[View Live Demo](https://harshavardhini1108.github.io/airline-reservation-system/)**
 
-## 📸 Screenshots
+ Screenshots
 
 ### Home Page - Flight Search
 ![Flight Search](screenshots/flight-search.png)
@@ -41,7 +41,7 @@ A modern, responsive airline reservation system built with HTML, CSS, and JavaSc
 ### Seat Selection
 ![Seat Selection](screenshots/seat-selection.png)
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - **HTML5**: Semantic markup and accessibility features
 - **CSS3**: Modern styling with Flexbox, Grid, and animations
@@ -60,7 +60,7 @@ airline-reservation/
 └── screenshots/        # Project screenshots
 ```
 
-## 🎯 Key Components
+##  Key Components
 
 ### 1. Flight Search System
 - City selection with 8 major destinations
@@ -81,7 +81,7 @@ airline-reservation/
 - Unique booking ID generation
 - Status tracking and management
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 - Modern web browser (Chrome, Firefox, Safari, Edge)
@@ -113,7 +113,7 @@ airline-reservation/
    - Open your browser and navigate to the local server URL
    - Start booking flights!
 
-## 💻 Usage
+##  Usage
 
 ### Booking a Flight
 
@@ -148,7 +148,7 @@ airline-reservation/
    - View booking details
    - Access "My Bookings" for future reference
 
-## 🎨 Customization
+##  Customization
 
 ### Styling
 - Modify `styles.css` to change colors, fonts, and layout
@@ -165,7 +165,7 @@ airline-reservation/
 - Change color scheme in CSS
 - Modify company information in the About section
 
-## 🌐 Deployment Options
+##  Deployment Options
 
 ### GitHub Pages (Free)
 1. Push code to GitHub repository
@@ -190,15 +190,15 @@ The application is fully responsive and optimized for:
 - **Tablet**: Adapted layout with touch-friendly interactions
 - **Mobile**: Streamlined interface optimized for small screens
 
-## 🔧 Browser Support
+##  Browser Support
 
-- ✅ Chrome (recommended)
-- ✅ Firefox
-- ✅ Safari
-- ✅ Edge
-- ✅ Mobile browsers
+- Chrome (recommended)
+-  Firefox
+- Safari
+- Edge
+-  Mobile browsers
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please feel free to submit a Pull Request.
 
@@ -208,25 +208,25 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 👩‍💻 Author
+##  Author
 
 **Harshavardhini V**
 - GitHub: [@harshavardhini1108](https://github.com/harshavardhini1108)
 - LinkedIn: [Your LinkedIn Profile](https://linkedin.com/in/your-profile)
 - Portfolio: [Your Portfolio Website](https://your-portfolio.com)
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - Font Awesome for icons
 - Modern CSS techniques and best practices
 - Responsive design principles
 - User experience design patterns
 
-## 📈 Future Enhancements
+##  Future Enhancements
 
 - [ ] Backend integration with real flight APIs
 - [ ] User authentication and profiles
@@ -239,4 +239,5 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-⭐ **If you found this project helpful, please give it a star!** ⭐
+
+ **If you found this project helpful, please give it a star!** 
